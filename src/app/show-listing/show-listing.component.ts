@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { Band } from './../models/band.model';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Band } from '../models/band.model';
 
 @Component({
   selector: 'app-show-listing',
@@ -7,8 +7,10 @@ import { Band } from './../models/band.model';
   styleUrls: ['./show-listing.component.css']
 })
 export class ShowListingComponent {
-  constructor(){
+@Input() childBandList: Band[];
 
+  constructor(){
+    
   }
 
 

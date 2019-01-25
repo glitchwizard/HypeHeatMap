@@ -1,7 +1,11 @@
-<div class="showListing">
-  <div class="colorBlock"></div>
-  <div class="showInfo">
-    <h3>Band: </h3>
-    <h4>Location:</h4>
-  </div>
-</div>
+<ul>
+  <li *ngFor="let currentBand of childBandList">
+      <div class="showListing">
+          <div class="colorBlock"></div>
+          <div class="showInfo">
+            <h3 class="debug">Band: {{currentBand.name}} </h3>
+            <h4 class="debug">Location: {{currentBand.location}}</h4>
+          </div>
+        </div>
+  </li>
+</ul>

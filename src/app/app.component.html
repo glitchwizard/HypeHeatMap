@@ -1,2 +1,8 @@
-<app-site-header></app-site-header>
-<app-show-listing></app-show-listing>
+<app-site-header ></app-site-header>
+<div class="ListHeader">
+  <h3>
+    Live music heat map for {{month}}/{{day}}/{{year}}
+  </h3>
+</div>
+
+<app-show-listing [childBandList]="masterBandList"></app-show-listing>
