@@ -1,10 +1,10 @@
 <ul>
   <li *ngFor="let currentBand of childBandList">
       <div class="showListing">
-          <div class="colorBlock"></div>
+          <div class="colorBlock" [ngStyle]="{'background-color' : setBlockColor()}"></div>
           <div class="showInfo">
-            <h3 class="debug">Band: {{currentBand.name}} </h3>
-            <h4 class="debug">Location: {{currentBand.location}}</h4>
+            <h3 class="">Band: {{currentBand.name}} </h3>
+            <h4 class="">Location: {{currentBand.location}}</h4>
           </div>
         </div>
   </li>

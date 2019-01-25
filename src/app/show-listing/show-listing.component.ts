@@ -10,8 +10,17 @@ export class ShowListingComponent {
 @Input() childBandList: Band[];
 
   constructor(){
-    
+
   }
 
+  setBlockColor(){
+    let randomColorHex = this.randomColorGen();
+    return ("#" + randomColorHex);
+  }
 
+  randomColorGen(){
+    var randomColor = Math.floor(Math.random()*16777215).toString(16);
+    return (randomColor);
+  }
+  
 }
