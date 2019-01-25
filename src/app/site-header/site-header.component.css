@@ -41,7 +41,7 @@ img.headerLogo {
 }
 
 .menu li:hover {
-  background: black;
+  background: green;
   color: white;
   vertical-align: top;
   list-style: none;
