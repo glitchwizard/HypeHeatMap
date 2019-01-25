@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Band } from './../models/band.model';
 
 @Component({
   selector: 'app-show-listing',
@@ -6,8 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./show-listing.component.css']
 })
 export class ShowListingComponent {
-  
-
   constructor(){
 
   }

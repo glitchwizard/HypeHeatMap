@@ -1,3 +1,3 @@
 export class Band {
-  constructor(public name: string;, public location: string) { }
+  constructor(public name: string, public location: string) { }
 }
