@@ -1,0 +1,45 @@
+{
+  "artists": {
+    "href": "https://api.spotify.com/v1/search?query=pseudoboss&type=artist&market=US&offset=0&limit=20",
+    "items": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/1vkPmcZ3XTMVwPO43Zy1pv"
+        },
+        "followers": {
+          "href": null,
+          "total": 68
+        },
+        "genres": [],
+        "href": "https://api.spotify.com/v1/artists/1vkPmcZ3XTMVwPO43Zy1pv",
+        "id": "1vkPmcZ3XTMVwPO43Zy1pv",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/df20373d637fb17cefd375bf349fe1397021a630",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/d61270f03a3977c556888330976e8e0a9453d774",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/a2c82d0a078af63200f087751fc16b984685f281",
+            "width": 64
+          }
+        ],
+        "name": "pseudoboss",
+        "popularity": 0,
+        "type": "artist",
+        "uri": "spotify:artist:1vkPmcZ3XTMVwPO43Zy1pv"
+      }
+    ],
+    "limit": 20,
+    "next": null,
+    "offset": 0,
+    "previous": null,
+    "total": 1
+  }
+}
