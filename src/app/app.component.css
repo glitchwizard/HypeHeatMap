@@ -3,3 +3,16 @@
   display: block;
   color: black;
 }
+
+app-right-menu {
+  display: inline-block;
+  float: right;
+  width: 25%;
+  margin: 0px;
+  padding: 0px;
+}
+
+app-show-listing {
+  display: inline-block;
+  width: 75%;
+}
