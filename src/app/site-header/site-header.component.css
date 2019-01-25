@@ -1,14 +1,54 @@
 .header {
   height: 45px;
+  line-height: 45px;
+  border: 1px solid red;
   border-bottom: 5px solid greenyellow;
-
+  position: relative;
+  text-align: left;
+  vertical-align: baseline;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 img.headerLogo {
-  height: 45px;
+  height: inherit;
   float: left;
 }
 
-.headerSelector {
-  vertical-align: middle;
+.menu {
+  display: inline-block;
+  zoom: 1;
+  vertical-align: top;
+  font-size: 0;
+  text-align: left;
+  border: 1px solid red;
+  text-transform: uppercase;
+  color: black;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.menu li{
+  padding: 0 10px;
+  display: inline-block;
+  zoom: 1;
+  vertical-align: top;
+  font-size: 15px;
+  position: relative;
+  border: 1px solid greenyellow;
+
+}
+
+.menu li:hover {
+  background: black;
+  color: white;
+  vertical-align: top;
+  list-style: none;
+  zoom: 1;
+
+}
+
+ul {
+  list-style: none;
 }
