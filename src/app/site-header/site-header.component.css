@@ -1,0 +1,14 @@
+.header {
+  height: 45px;
+  border-bottom: 5px solid greenyellow;
+
+}
+
+img.headerLogo {
+  height: 45px;
+  float: left;
+}
+
+.headerSelector {
+  vertical-align: middle;
+}
