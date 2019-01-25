@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./show-listing.component.css']
 })
 export class ShowListingComponent {
+  
+
+  constructor(){
+
+  }
+
 
 }
