@@ -23,7 +23,7 @@
   display: inline-block;
   height: 100%;
   margin: auto;
-  background-color: burlywood;
+  border: 1px solid greenyellow;
 }
 
 .debug {
