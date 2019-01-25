@@ -2,17 +2,26 @@
   margin: 10px;
   display: block;
   color: black;
+  border: 1px solid greenyellow;
+  text-align: center;
 }
 
 app-right-menu {
-  display: inline-block;
+  display: block;
   float: right;
   width: 25%;
   margin: 0px;
   padding: 0px;
+  max-width: 200px;
+  height: 100%;
+  margin: auto;
 }
 
 app-show-listing {
-  display: inline-block;
+  display: block;
+  max-width: 1000px;
   width: 75%;
+  height: 100%;
+  float: left;
+  margin: auto;
 }

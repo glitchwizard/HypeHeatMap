@@ -23,6 +23,7 @@
               "src/assets"
             ],
             "styles": [
+              "https://bootswatch.com/4/lux/bootstrap.css"
               "src/styles.css"
             ],
             "scripts": []
