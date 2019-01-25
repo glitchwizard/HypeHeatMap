@@ -14,11 +14,11 @@ export class ShowListingComponent {
   }
 
   setBlockColor(){
-    let randomColorHex = this.randomColorGen();
+    let randomColorHex = this.randomColorHexGen();
     return ("#" + randomColorHex);
   }
 
-  randomColorGen(){
+  randomColorHexGen(){
     var randomColor = Math.floor(Math.random()*16777215).toString(16);
     return (randomColor);
   }
