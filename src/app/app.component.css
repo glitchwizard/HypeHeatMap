@@ -1,9 +1,14 @@
 .ListHeader {
   margin: 10px;
-  display: block;
+  max-width: 800px;
+  display: inline-block;
   color: black;
   border: 1px solid greenyellow;
   text-align: center;
+}
+
+h1 {
+  margin: inherit;
 }
 
 app-right-menu {
@@ -12,7 +17,7 @@ app-right-menu {
   width: 25%;
   margin: 0px;
   padding: 0px;
-  max-width: 200px;
+  max-width: 250px;
   height: 100%;
   margin: auto;
 }

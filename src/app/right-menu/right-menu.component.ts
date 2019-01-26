@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./right-menu.component.css']
 })
 export class RightMenuComponent {
+  addNewBand = null;
 
+  createNewBandToggle() {
+    
+    if (this.addNewBand) {
+      this.addNewBand = null;
+    } else {
+      this.addNewBand = true;
+    }
+  }
 }
