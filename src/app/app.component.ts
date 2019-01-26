@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Band } from './models/band.model';
-import { checkAndUpdateBinding } from '@angular/core/src/view/util';
 
 @Component({
   selector: 'app-root',
@@ -9,12 +8,12 @@ import { checkAndUpdateBinding } from '@angular/core/src/view/util';
 })
 export class AppComponent {
 
-  title = 'HypeHeatMap';
+  // title = 'HypeHeatMap';
 
-  currentTime = new Date();
-  month: number = this.currentTime.getMonth() + 1;
-  day: number = this.currentTime.getDay();
-  year: number = this.currentTime.getFullYear();
+  // currentTime = new Date();
+  // month: number = this.currentTime.getMonth() + 1;
+  // day: number = this.currentTime.getDay();
+  // year: number = this.currentTime.getFullYear();
   
   masterBandList: Band[] = [
     new Band('Stargasm', 'Portland, OR'),

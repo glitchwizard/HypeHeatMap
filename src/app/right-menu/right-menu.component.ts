@@ -21,7 +21,7 @@ export class RightMenuComponent {
 
   submitForm(bandName: string, bandLocation: string) {
     let newBand = new Band(bandName, bandLocation);
-    debugger;
+    console.log("SendBand about to fire off");
     this.sendBand.emit(newBand);
   }
 }

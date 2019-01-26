@@ -1,13 +1,13 @@
 <div class="containerRightMenu">
   <button class="btn btn-outline-primary" (click) = "createNewBandToggle()"> Create a new show listing </button>
 
-<form  *ngIf = "addNewBand">
+<div *ngIf = "addNewBand">
   <label for="bandName">Band Name</label>
   <input #bandName>
   <label for="bandLocation">Band Location</label>
   <input #bandLocation>
   <br />
-  <button class="btn btn-outline-primary" (click) = "submitForm(bandName.value, BandLocation.value);">Add New Band</button>
-</form>
+  <button (click) = "submitForm(bandName.value, bandLocation.value);">Add New Band</button>
+</div>
 
 </div>
