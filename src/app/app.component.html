@@ -4,5 +4,5 @@
     Live music heat map for {{month}}/{{day}}/{{year}}
   </h1>
 </div>
-<app-right-menu></app-right-menu>
+<app-right-menu (sendBand)='addBand($event)'></app-right-menu>
 <app-show-listing [childBandList]="masterBandList"></app-show-listing>

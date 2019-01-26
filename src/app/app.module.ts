@@ -16,7 +16,6 @@ import { RightMenuComponent } from './right-menu/right-menu.component';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

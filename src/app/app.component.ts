@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Band } from './models/band.model';
+import { checkAndUpdateBinding } from '@angular/core/src/view/util';
 
 @Component({
   selector: 'app-root',
@@ -21,4 +22,8 @@ export class AppComponent {
     new Band('Jules Truly', 'Bronx, NY'),
     new Band('Periphery', 'Washington, DC'),
   ]
+
+  addBand(newBand: Band) {
+    this.masterBandList.push(newBand);
+  }
 }

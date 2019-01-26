@@ -1,5 +1,6 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Band } from '../models/band.model';
+import { removeDebugNodeFromIndex } from '@angular/core/src/debug/debug_node';
 
 @Component({
   selector: 'app-show-listing',
@@ -14,6 +15,7 @@ export class ShowListingComponent {
   }
 
   setBlockColor(){
+    debugger;
     let randomColorHex = this.randomColorHexGen();
     return ("#" + randomColorHex);
   }
