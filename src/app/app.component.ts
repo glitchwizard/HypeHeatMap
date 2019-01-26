@@ -7,7 +7,6 @@ import { Band } from './models/band.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
   title = 'HypeHeatMap';
 
   currentTime = new Date();

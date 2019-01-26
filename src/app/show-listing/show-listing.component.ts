@@ -9,9 +9,16 @@ import { Band } from '../models/band.model';
 export class ShowListingComponent {
 @Input() childBandList: Band[];
 
+  blockColorArray = [];
+
   setBlockColor() {
     const randomColorHex = Math.floor(Math.random() * 16777215).toString(16);
     return ('#' + randomColorHex);
+  }
+
+  buildBlockColorArray(){
+    // need to finish this method
+    return "fun";
   }
 
 }
