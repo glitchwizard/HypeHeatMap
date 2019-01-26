@@ -2,6 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.3.
 
+## Project Scope
+
+This project is hoping to build an app that will create a playlist for bands that are in your area playing soon. 
+
+It will also create a heat map for bands that have been blogged about, and where the blog is (mostly) located. 
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
