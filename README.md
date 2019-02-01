@@ -1,5 +1,9 @@
 # HypeHeatMap
 
+#### _This will generate a list of bands that are gigging in your area, who are being written about online, 2019-02-01_
+
+#### By _**Charley McGowan**_
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.3.
 
 ## Project Scope
@@ -7,6 +11,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 This project is hoping to build an app that will create a playlist for bands that are in your area playing soon. 
 
 It will also create a heat map for bands that have been blogged about, and where the blog is (mostly) located. 
+
+### Current Features
+Currently it connects to a database in Firebase for updates, and users can input show locations with bands. 
+
+### Upcoming Features
+Upcoming features will link it to something like HypeMachine (www.hypem.com) to get blogs about bands and then cross reference them against shows in your area to see if you can find bands that are playing soon, with blogs or publications written about them.
 
 ## Development server
 
