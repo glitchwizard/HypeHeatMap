@@ -13,8 +13,4 @@ export class AppComponent {
   month: number = this.currentTime.getMonth() + 1;
   day: number = this.currentTime.getDay();
   year: number = this.currentTime.getFullYear();
-
-  addBand(newBand: Band) {
-    this.masterBandList.push(newBand);
-  }
 }

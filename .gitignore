@@ -45,3 +45,7 @@ testem.log
 .DS_Store
 Thumbs.db
 src/app/api-keys.ts
+
+# My own input
+.firebase/
+.vs/
