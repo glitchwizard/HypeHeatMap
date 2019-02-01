@@ -1,15 +1,23 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Band } from '../models/band.model';
+import { ShowListingService } from '../show-listing.service';
 
 @Component({
   selector: 'app-right-menu',
   templateUrl: './right-menu.component.html',
-  styleUrls: ['./right-menu.component.css']
+  styleUrls: ['./right-menu.component.css'],
+  providers: [ShowListingService]
 })
-export class RightMenuComponent {
-  @Output() sendBand = new EventEmitter();
+export class RightMenuComponent implements OnInit {
+  bands: Band[];
 
   addNewBand = null;
+
+  constructor(private showListingService: ShowListingService) {}
+
+  ngOnInit(){
+    this.bands = this.showListingService.getBands();
+  }
 
   createNewBandToggle() {
     if (this.addNewBand) {
@@ -20,8 +28,7 @@ export class RightMenuComponent {
   }
 
   submitForm(bandName: string, bandLocation: string) {
-    let newBand = new Band(bandName, bandLocation);
-    console.log('SendBand about to fire off');
-    this.sendBand.emit(newBand);
+    const newBand = new Band(bandName, bandLocation);
+    this.showListingService.addBand(newBand);
   }
 }

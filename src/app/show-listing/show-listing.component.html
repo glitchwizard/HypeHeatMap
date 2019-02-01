@@ -1,7 +1,7 @@
 <ul>
   <li *ngFor="let currentBand of childBandList">
       <div class="showListing">
-          <div class="colorBlock" [style.background-color]="setBlockColor()"></div>
+          <div class="colorBlock" [style.background-color]="getRandomHexColor()"></div>
           <div class="showInfo">
             <h3 class="">Band: {{currentBand.name}} </h3>
             <h4 class="">Location: {{currentBand.location}}</h4>

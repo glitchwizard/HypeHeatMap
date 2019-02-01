@@ -1,0 +1,11 @@
+{ "bands": [{
+    "name": " Stargasm",
+    "location": "Portland, OR"
+    }, {
+    "name": "Snarky Puppy",
+    "location": "Denton, TX"
+      }, {
+    "name": "Jules Truly",
+    "location": "Bronx, NY"
+  }]
+}
