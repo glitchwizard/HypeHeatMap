@@ -16,9 +16,9 @@ export class ShowListingComponent {
     return ('#' + randomColorHex);
   }
 
-  buildBlockColorArray(){
+  buildBlockColorArray() {
     this.blockColorArray.push(this.getRandomHexColor());
-    return "fun";
+    return 'fun';
   }
 
 }
