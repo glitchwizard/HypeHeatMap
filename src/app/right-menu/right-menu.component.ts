@@ -16,7 +16,7 @@ export class RightMenuComponent implements OnInit {
 
   constructor(private showListingService: ShowListingService) {}
 
-  ngOnInit(){
+  ngOnInit() {
     this.bands = this.showListingService.getBands();
   }
 

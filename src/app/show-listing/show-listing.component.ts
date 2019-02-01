@@ -1,5 +1,4 @@
-import { Component, Input , OnInit} from '@angular/core';
-import { Band } from '../models/band.model';
+import { Component, OnInit} from '@angular/core';
 import { FirebaseListObservable } from 'angularfire2/database';
 import { ShowListingService } from '../services/show-listing.service';
 
@@ -10,7 +9,6 @@ import { ShowListingService } from '../services/show-listing.service';
   providers: [ShowListingService]
 })
 export class ShowListingComponent implements OnInit {
-  @Input() childBandList: Band[];
   bandList: FirebaseListObservable<any[]>;
 
   constructor(private showListingService: ShowListingService) { }
