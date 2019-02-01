@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { BandServiceService } from './band-service.service';
+import { BandServiceService } from './band-listing.service';
 
 describe('BandServiceService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));

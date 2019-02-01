@@ -6,7 +6,7 @@ import { Show } from '../models/show.model';
 @Injectable({
   providedIn: 'root'
 })
-export class ShowListingService {
+export class BandListingService {
   show: Show;
   band: Band;
   bands: FirebaseListObservable<any[]>;
@@ -18,22 +18,22 @@ export class ShowListingService {
     this.bands = database.list('bands');
   }
 
-  getShows() {
-    return this.shows;
+  getBands() {
+    return this.bands;
   }
 
-  addShow(newShow: Show) {
-    this.shows.push(newShow);
+  addBand(newBand: Band) {
+    this.bands.push(newBand);
   }
 
-  getShowById(showId: string) {
-    return this.database.object(showId);
+  getBandById(bandId: string) {
+    return this.database.object(bandId);
   }
 
-  updateShow(localUpdatedShow) {
-    const showEntryInFirebase = this.getShowById(localUpdatedShow.$key);
-    showEntryInFirebase.update({title: localUpdatedShow.title,
-                                artist: localUpdatedShow.artist,
-                                description: localUpdatedShow.description});
+  updateBand(localUpdatedBand) {
+    const bandEntryInFirebase = this.getBandById(localUpdatedBand.$key);
+    bandEntryInFirebase.update({title: localUpdatedBand.title,
+                                artist: localUpdatedBand.artist,
+                                description: localUpdatedBand.description});
   }
 }

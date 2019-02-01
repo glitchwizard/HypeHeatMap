@@ -1,12 +1,12 @@
-<div *ngFor="let currentBand of bandList | async">
+<div *ngFor="let currentShow of showList | async">
       <div class="card">
         <div class="card-header">
             <div class="colorBlockNew" [style.background-color]="getRandomHexColor()"></div>
             <button class="btn btn-outline-primary btn-sm"> Edit </button>
         </div>
         <div class="card-body">
-          <h3>Band: {{currentBand.name}}</h3>
-          <h4>origin: {{currentBand.origin}}</h4>
+          <h3>Band: {{currentShow.venueName}}</h3>
+          <h4>origin: {{currentShow.origin}}</h4>
         </div>
       </div>
       <p></p>

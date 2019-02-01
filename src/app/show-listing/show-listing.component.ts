@@ -9,12 +9,12 @@ import { ShowListingService } from '../services/show-listing.service';
   providers: [ShowListingService]
 })
 export class ShowListingComponent implements OnInit {
-  bandList: FirebaseListObservable<any[]>;
+  showList: FirebaseListObservable<any[]>;
 
   constructor(private showListingService: ShowListingService) { }
 
   ngOnInit() {
-    this.bandList = this.showListingService.getBands();
+    this.showList = this.showListingService.getShows();
   }
 
   getRandomHexColor() {
