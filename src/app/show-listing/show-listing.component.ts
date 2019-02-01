@@ -11,13 +11,13 @@ export class ShowListingComponent {
 
   blockColorArray = [];
 
-  setBlockColor() {
+  getRandomHexColor() {
     const randomColorHex = Math.floor(Math.random() * 16777215).toString(16);
     return ('#' + randomColorHex);
   }
 
   buildBlockColorArray(){
-    // need to finish this method
+    this.blockColorArray.push(this.getRandomHexColor());
     return "fun";
   }
 
