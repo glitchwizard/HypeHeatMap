@@ -1,8 +1,6 @@
 import { Band } from './band.model';
 
 export class Show {
-  
-  bandList: Band[];
 
-  constructor() {}
+  constructor(public bandList: Band[] = []) {}
 }

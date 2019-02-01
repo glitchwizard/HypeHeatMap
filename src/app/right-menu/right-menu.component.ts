@@ -12,7 +12,7 @@ import { FirebaseListObservable } from 'angularfire2/database';
 export class RightMenuComponent implements OnInit {
   bands: FirebaseListObservable<any[]>;
 
-  addNewBand = null;
+  addNewShow = null;
 
   constructor(private showListingService: ShowListingService) {}
 
@@ -20,11 +20,11 @@ export class RightMenuComponent implements OnInit {
     this.bands = this.showListingService.getBands();
   }
 
-  createNewBandToggle() {
-    if (this.addNewBand) {
-      this.addNewBand = null;
+  createNewShowToggle() {
+    if (this.addNewShow) {
+      this.addNewShow = null;
     } else {
-      this.addNewBand = true;
+      this.addNewShow = true;
     }
   }
 

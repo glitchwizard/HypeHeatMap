@@ -18,22 +18,22 @@ export class ShowListingService {
     this.bands = database.list('bands');
   }
 
-  getBands() {
-    return this.bands;
+  getShows() {
+    return this.shows;
   }
 
-  addBand(newBand: Band) {
-    this.bands.push(newBand);
+  addShow(newShow: Show) {
+    this.shows.push(newShow);
   }
 
-  getBandById(bandId: string) {
-    return this.database.object(bandId);
+  getShowById(showId: string) {
+    return this.database.object(showId);
   }
 
-  updateBand(localUpdatedBand) {
-    const bandEntryInFirebase = this.getBandById(localUpdatedBand.$key);
-    bandEntryInFirebase.update({title: localUpdatedBand.title,
-                                artist: localUpdatedBand.artist,
-                                description: localUpdatedBand.description});
+  updateShow(localUpdatedShow) {
+    const showEntryInFirebase = this.getShowById(localUpdatedShow.$key);
+    showEntryInFirebase.update({title: localUpdatedShow.title,
+                                artist: localUpdatedShow.artist,
+                                description: localUpdatedShow.description});
   }
 }
