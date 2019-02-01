@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Band } from './models/band.model';
 
 @Component({
   selector: 'app-root',
