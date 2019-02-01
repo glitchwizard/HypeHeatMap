@@ -15,6 +15,12 @@
 .navbar {
   padding: 0%;
   text-align: left;
+  display: -webkit-inline-box;
+  width: 100%;
+}
+
+.nav {
+  text-align: left;
 }
 
 img.headerLogo {
@@ -39,12 +45,11 @@ img.headerLogo {
 .menu li{
   padding: 0 10px;
   display: inline-block;
-  zoom: 1;
   vertical-align: top;
   font-size: 15px;
   position: relative;
   border: 1px solid greenyellow;
-text-align: left;
+  text-align: left;
 }
 
 .menu li:hover {
@@ -58,4 +63,7 @@ text-align: left;
 
 ul {
   list-style: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
 }
