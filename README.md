@@ -14,7 +14,7 @@ It will also create a heat map for bands that have been blogged about, and where
 
 ### Current Features
 
-Currently it connects to a database in Firebase for updates, and users can input show locations with bands.
+Currently it connects to a database in Firebase for updates, and users can input show origins with bands.
 
 ### Upcoming Features
 

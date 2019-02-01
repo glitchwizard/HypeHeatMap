@@ -28,8 +28,8 @@ export class RightMenuComponent implements OnInit {
     }
   }
 
-  submitForm(bandName: string, bandLocation: string) {
-    const newBand = new Band(bandName, bandLocation);
+  submitForm(bandName: string, bandorigin: string) {
+    const newBand = new Band(bandName, bandorigin);
     this.showListingService.addBand(newBand);
   }
 }

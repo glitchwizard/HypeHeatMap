@@ -1,11 +1,11 @@
 { "bands": [{
     "name": " Stargasm",
-    "location": "Portland, OR"
+    "origin": "Portland, OR"
     }, {
     "name": "Snarky Puppy",
-    "location": "Denton, TX"
+    "origin": "Denton, TX"
       }, {
     "name": "Jules Truly",
-    "location": "Bronx, NY"
+    "origin": "Bronx, NY"
   }]
 }
