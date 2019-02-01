@@ -1,10 +1,13 @@
 .ListHeader {
   margin: 10px;
   max-width: 800px;
-  display: inline-block;
+  display: block;
   color: black;
   border: 1px solid greenyellow;
   text-align: center;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h1 {
@@ -29,4 +32,15 @@ app-show-listing {
   height: 100%;
   float: left;
   margin: auto;
+  margin-bottom: 109px;
+}
+
+app-site-footer {
+  margin-top: 10px;
+  bottom: 0;
+  display: inline-block;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  color: black;
 }

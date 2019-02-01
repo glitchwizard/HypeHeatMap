@@ -1,7 +1,7 @@
 import { Component, Input , OnInit} from '@angular/core';
 import { Band } from '../models/band.model';
 import { FirebaseListObservable } from 'angularfire2/database';
-import { ShowListingService } from '../show-listing.service';
+import { ShowListingService } from '../services/show-listing.service';
 
 @Component({
   selector: 'app-show-listing',

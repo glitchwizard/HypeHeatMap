@@ -1,6 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Band } from '../models/band.model';
-import { ShowListingService } from '../show-listing.service';
+import { ShowListingService } from '../services/show-listing.service';
 import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({

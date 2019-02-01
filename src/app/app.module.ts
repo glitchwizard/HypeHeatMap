@@ -9,6 +9,7 @@ import { RightMenuComponent } from './right-menu/right-menu.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { SiteFooterComponent } from './site-footer/site-footer.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -23,7 +24,8 @@ export const firebaseConfig = {
     AppComponent,
     SiteHeaderComponent,
     ShowListingComponent,
-    RightMenuComponent
+    RightMenuComponent,
+    SiteFooterComponent
   ],
   imports: [
     BrowserModule,

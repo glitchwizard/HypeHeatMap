@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Band } from './models/band.model';
+import { Band } from '../models/band.model';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable({

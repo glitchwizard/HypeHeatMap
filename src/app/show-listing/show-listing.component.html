@@ -1,18 +1,12 @@
-<div class="panel panel-default">
-    <div class="panel-heading">
-      <h3 class="panel-title">Show List:</h3>
-    </div>
-    <div class="panel-body">
-        <ul>
-            <li *ngFor="let currentBand of bandList | async">
-                <div class="showListing">
-                    <div class="colorBlock" [style.background-color]="getRandomHexColor()"></div>
-                    <div class="showInfo">
-                      <h3 class="">Band: {{currentBand.name}} </h3>
-                      <h4 class="">Location: {{currentBand.location}}</h4>
-                    </div>
-                  </div>
-            </li>
-          </ul>
-    </div>
+<div *ngFor="let currentBand of bandList | async">
+      <div class="card">
+        <div class="card-header">
+            <div class="colorBlockNew" [style.background-color]="getRandomHexColor()"></div>
+        </div>
+        <div class="card-body">
+          <h3>Band: {{currentBand.name}}</h3>
+          <h4>Location: {{currentBand.location}}</h4>
+        </div>
+      </div>
+      <p></p>
 </div>
