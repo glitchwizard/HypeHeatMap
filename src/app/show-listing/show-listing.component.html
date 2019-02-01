@@ -1,5 +1,5 @@
 <ul>
-  <li *ngFor="let currentBand of childBandList">
+  <li *ngFor="let currentBand of bandList | async">
       <div class="showListing">
           <div class="colorBlock" [style.background-color]="getRandomHexColor()"></div>
           <div class="showInfo">
@@ -9,3 +9,5 @@
         </div>
   </li>
 </ul>
+
+  
