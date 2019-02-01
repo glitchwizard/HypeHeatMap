@@ -12,7 +12,7 @@ export class ShowListingService {
     this.bands = database.list('bands');
   }
 
-  getBands(){
+  getBands() {
     return this.bands;
   }
 

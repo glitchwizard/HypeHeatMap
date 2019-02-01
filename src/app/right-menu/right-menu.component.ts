@@ -1,6 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Band } from '../models/band.model';
 import { ShowListingService } from '../show-listing.service';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-right-menu',
@@ -9,7 +10,7 @@ import { ShowListingService } from '../show-listing.service';
   providers: [ShowListingService]
 })
 export class RightMenuComponent implements OnInit {
-  bands: Band[];
+  bands: FirebaseListObservable<any[]>;
 
   addNewBand = null;
 
