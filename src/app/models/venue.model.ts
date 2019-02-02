@@ -1,2 +1,3 @@
-export class Venue.Model {
+export class Venue {
+  constructor(public name: string) {}
 }

@@ -1,25 +1,25 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { Band } from '../models/band.model';
-import { ShowListingService } from '../services/show-listing.service';
+import { ShowService } from '../services/show.service';
 import { FirebaseListObservable } from 'angularfire2/database';
-import { Show } from '../models/show.model';
-import { BandListingService } from '../services/band-listing.service';
+import { BandService } from '../services/band.service';
+import { Venue } from '../models/venue.model';
+import { VenueService } from '../services/venue.service';
 
 @Component({
   selector: 'app-right-menu',
   templateUrl: './right-menu.component.html',
   styleUrls: ['./right-menu.component.css'],
-  providers: [ShowListingService, BandListingService]
+  providers: [ShowService, BandService]
 })
 export class RightMenuComponent implements OnInit {
   shows: FirebaseListObservable<any[]>;
 
   addNewShow = null;
 
-  constructor(private showListingService: ShowListingService, private bandListingService: BandListingService) {}
+  constructor(private venueService: VenueService) {}
 
   ngOnInit() {
-    this.shows = this.showListingService.getShows();
+    this.shows = this.venueService.getVenues();
   }
 
   createNewShowToggle() {
@@ -30,11 +30,12 @@ export class RightMenuComponent implements OnInit {
     }
   }
 
-  submitForm(bandName: string, bandorigin: string) {
-    const newBand = new Band(bandName, bandorigin);
-    const formBandList: Band[] = [newBand];
-    const newShow = new Show(formBandList);
-    this.showListingService.addShow(newShow);
-    this.bandListingService.addBand(newBand);
+  submitForm(venueName: string) {
+    const newVenue: Venue = new Venue(venueName);
+    // const formBandList: Band[] = [newBand];
+    // const newShow = new Show(formBandList);
+    // this.showService.addShow(newShow);
+    // this.bandService.addBand(newBand);
+    this.venueService.addVenue(newVenue);
   }
 }

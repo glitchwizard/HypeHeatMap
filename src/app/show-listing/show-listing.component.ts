@@ -1,20 +1,20 @@
 import { Component, OnInit} from '@angular/core';
 import { FirebaseListObservable } from 'angularfire2/database';
-import { ShowListingService } from '../services/show-listing.service';
+import { ShowService } from '../services/show.service';
 
 @Component({
   selector: 'app-show-listing',
   templateUrl: './show-listing.component.html',
   styleUrls: ['./show-listing.component.css'],
-  providers: [ShowListingService]
+  providers: [ShowService]
 })
 export class ShowListingComponent implements OnInit {
   showList: FirebaseListObservable<any[]>;
 
-  constructor(private showListingService: ShowListingService) { }
+  constructor(private ShowService: ShowService) { }
 
   ngOnInit() {
-    this.showList = this.showListingService.getShows();
+    this.showList = this.ShowService.getShows();
   }
 
   getRandomHexColor() {
