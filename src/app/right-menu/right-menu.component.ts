@@ -56,7 +56,6 @@ export class RightMenuComponent implements OnInit {
 
   submitShowForm(showDate: Date) {
     const newShow: Show = new Show(showDate);
-    debugger;
     this.showService.addShow(newShow);
   }
 }

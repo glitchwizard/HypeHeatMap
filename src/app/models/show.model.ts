@@ -9,8 +9,10 @@ export class Show {
   showDateMonth: number;
 
   constructor(public showDate: Date) {
+    this.showDate = new Date(showDate);
+    this.showDate = new Date(this.showDate.getTime()+this.showDate.getTimezoneOffset()*60*1000);
     this.showDateYear = this.showDate.getFullYear();
-    this.showDateDay = this.showDate.getDay();
+    this.showDateDay = this.showDate.getDate();
     this.showDateMonth = this.showDate.getMonth() + 1;
   }
 
