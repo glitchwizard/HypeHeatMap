@@ -25,13 +25,14 @@ export class RightMenuComponent implements OnInit {
     this.shows = this.venueService.getVenues();
   }
 
-  createNewShowToggle() {
-    if (this.addNewShow) {
-      this.addNewShow = null;
+  createNewBandToggle() {
+    if (this.addNewBand) {
+      this.addNewBand = null;
     } else {
-      this.addNewShow = true;
+      this.addNewBand = true;
     }
   }
+
   createNewVenueToggle() {
     if (this.addNewVenue) {
       this.addNewVenue = null;
@@ -40,11 +41,11 @@ export class RightMenuComponent implements OnInit {
     }
   }
 
-  createNewBandToggle() {
-    if (this.addNewBand) {
-      this.addNewBand = null;
+  createNewShowToggle() {
+    if (this.addNewShow) {
+      this.addNewShow = null;
     } else {
-      this.addNewBand = true;
+      this.addNewShow = true;
     }
   }
 
@@ -55,6 +56,7 @@ export class RightMenuComponent implements OnInit {
 
   submitShowForm(showDate: Date) {
     const newShow: Show = new Show(showDate);
+    debugger;
     this.showService.addShow(newShow);
   }
 }

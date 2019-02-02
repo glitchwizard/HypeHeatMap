@@ -4,9 +4,15 @@ import { Venue } from './venue.model';
 export class Show {
   venue: Venue;
   bandList: Band[];
-  showdate: Date;
+  showDateYear: number;
+  showDateDay: number;
+  showDateMonth: number;
 
-  constructor(public showDate: Date) {}
+  constructor(public showDate: Date) {
+    this.showDateYear = this.showDate.getFullYear();
+    this.showDateDay = this.showDate.getDay();
+    this.showDateMonth = this.showDate.getMonth() + 1;
+  }
 
   addVenue(newVenue: Venue) {
     this.venue = newVenue;
