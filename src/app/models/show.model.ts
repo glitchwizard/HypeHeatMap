@@ -1,8 +1,18 @@
 import { Band } from './band.model';
+import { Venue } from './venue.model';
 
 export class Show {
-  venue: string;
+  venue: Venue;
   bandList: Band[];
+  showdate: Date;
 
-  constructor(public venueName: string) {}
+  constructor(public showDate: Date) {}
+
+  addVenue(newVenue: Venue) {
+    this.venue = newVenue;
+  }
+
+  addBandToShow(bandToAdd: Band) {
+    this.bandList.push(bandToAdd);
+  }
 }

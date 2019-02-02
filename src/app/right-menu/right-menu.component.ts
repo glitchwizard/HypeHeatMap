@@ -47,7 +47,7 @@ export class RightMenuComponent implements OnInit {
     }
   }
 
-  submitForm(venueName: string) {
+  submitShowForm(venueName: string) {
     const newVenue: Venue = new Venue(venueName);
     // const formBandList: Band[] = [newBand];
     // const newShow = new Show(formBandList);

@@ -7,12 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainPageComponent implements OnInit {
 
-  currentTime = new Date();
-  month: number = this.currentTime.getMonth() + 1;
-  day: number = this.currentTime.getDay();
-  year: number = this.currentTime.getFullYear();
-
-  constructor() { }
+  constructor() {
+    
+  }
 
   ngOnInit() {
   }

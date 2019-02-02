@@ -17,7 +17,7 @@
               <small class="form-text text-muted">City, State, Country</small>
               
               <br />
-              <button class="btn btn-outline-primary" (click) = "submitForm(bandName.value, bandOrigin.value);">Add New Band</button>
+              <button class="btn btn-outline-primary" (click) = "submitBandForm(bandName.value, bandOrigin.value);">Add New Band</button>
             </div>
           </div>
       </div>
@@ -40,7 +40,7 @@
             <small class="form-text text-muted">City, State, Country</small> -->
             
             <br />
-            <button class="btn btn-outline-primary btn-sm" (click) = "submitForm(venueName.value);">Add New venue</button>
+            <button class="btn btn-outline-primary btn-sm" (click) = "submitVenueForm(venueName.value);">Add New venue</button>
           </div>
         </div>
     </div>
@@ -55,15 +55,11 @@
                 <h3 class="panel-title">Create a new show</h3>
             </div>
           <div class="panel-body">
-            <label for="showName">Show Name</label>
-            <input #venueName class="form-control mr-sm-2">
-        
-            <!-- <label for="bandorigin">Band origin</label>
-            <input #bandorigin class="form-control mr-sm-2">
-            <small class="form-text text-muted">City, State, Country</small> -->
+            <label for="showName">Show Date</label>
+            <input type="date" #showDate class="form-control mr-sm-2">
             
             <br />
-            <button class="btn btn-outline-primary" (click) = "submitForm(venueName.value);">Add New Show</button>
+            <button class="btn btn-outline-primary" (click) = "submitShowForm(showDate.value);">Add New Show</button>
           </div>
         </div>
     </div>
