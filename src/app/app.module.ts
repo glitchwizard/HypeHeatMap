@@ -10,6 +10,10 @@ import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { SiteFooterComponent } from './site-footer/site-footer.component';
+import { VenueListingComponent } from './venue-listing/venue-listing.component';
+import { AdminComponent } from './admin/admin.component';
+import { MainPageComponent } from './main-page/main-page.component';
+import { routing } from "./app.routing";
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -25,14 +29,18 @@ export const firebaseConfig = {
     SiteHeaderComponent,
     ShowListingComponent,
     RightMenuComponent,
-    SiteFooterComponent
+    SiteFooterComponent,
+    VenueListingComponent,
+    AdminComponent,
+    MainPageComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
