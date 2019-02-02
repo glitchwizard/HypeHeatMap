@@ -15,6 +15,8 @@ export class RightMenuComponent implements OnInit {
   shows: FirebaseListObservable<any[]>;
 
   addNewShow = null;
+  addNewVenue = null;
+  addNewBand = null;
 
   constructor(private venueService: VenueService) {}
 
@@ -27,6 +29,21 @@ export class RightMenuComponent implements OnInit {
       this.addNewShow = null;
     } else {
       this.addNewShow = true;
+    }
+  }
+  createNewVenueToggle() {
+    if (this.addNewVenue) {
+      this.addNewVenue = null;
+    } else {
+      this.addNewVenue = true;
+    }
+  }
+
+  createNewBandToggle() {
+    if (this.addNewBand) {
+      this.addNewBand = null;
+    } else {
+      this.addNewBand = true;
     }
   }
 

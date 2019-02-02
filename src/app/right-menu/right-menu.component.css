@@ -9,3 +9,13 @@
 form {
   margin-top: 10px;
 }
+
+.container {
+  border: 1px solid black;
+  padding-top: 15px;
+}
+
+label {
+ margin-top: 10px; 
+ margin-bottom: 3px;
+}

@@ -1,23 +1,71 @@
 
 <div class="containerRightMenu">
-  <button class="btn btn-outline-primary btn-sm" (click) = "createNewShowToggle()"> Create a new venue</button>
-<p></p>
-  <div *ngIf = "addNewShow">
-      <div class="panel panel-default">
-          <div class="panel-heading">
-              <h3 class="panel-title">Create a new venue</h3>
-          </div>
-        <div class="panel-body">
-          <label for="venueName">Venue Name</label>
-          <input #venueName class="form-control mr-sm-2">
-      
-          <!-- <label for="bandorigin">Band origin</label>
-          <input #bandorigin class="form-control mr-sm-2">
-          <small class="form-text text-muted">City, State, Country</small> -->
+  <div class="container">
+      <button class="btn btn-outline-primary btn-sm" (click) = "createNewBandToggle()"> Create a new band</button>
+    <p></p>
+      <div *ngIf = "addNewBand">
+          <div class="panel panel-default">
+              <div class="panel-heading">
+                  <h3 class="panel-title">Create a new band</h3>
+              </div>
+            <div class="panel-body">
+              <label for="bandName">Band Name</label>
+              <input #venueName class="form-control mr-sm-2">
           
-          <br />
-          <button class="btn btn-outline-primary" (click) = "submitForm(venueName.value);">Add New Show</button>
-        </div>
+              <label for="bandOrigin">Band origin</label>
+              <input #bandOrigin class="form-control mr-sm-2">
+              <small class="form-text text-muted">City, State, Country</small>
+              
+              <br />
+              <button class="btn btn-outline-primary" (click) = "submitForm(bandName.value, bandOrigin.value);">Add New Band</button>
+            </div>
+          </div>
       </div>
+    </div>
+    <p></p>
+  <div class="container">
+    <button class="btn btn-outline-primary btn-sm" (click) = "createNewVenueToggle()"> Create a new venue</button>
+  <p></p>
+    <div *ngIf = "addNewVenue">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Create a new venue</h3>
+            </div>
+          <div class="panel-body">
+            <label for="venueName">Venue Name</label>
+            <input #venueName class="form-control mr-sm-2">
+        
+            <!-- <label for="bandorigin">Band origin</label>
+            <input #bandorigin class="form-control mr-sm-2">
+            <small class="form-text text-muted">City, State, Country</small> -->
+            
+            <br />
+            <button class="btn btn-outline-primary btn-sm" (click) = "submitForm(venueName.value);">Add New venue</button>
+          </div>
+        </div>
+    </div>
+  </div>
+  <p></p>
+  <div class="container">
+    <button class="btn btn-outline-primary btn-sm" (click) = "createNewShowToggle()"> Create a new show</button>
+  <p></p>
+    <div *ngIf = "addNewShow">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Create a new show</h3>
+            </div>
+          <div class="panel-body">
+            <label for="showName">Show Name</label>
+            <input #venueName class="form-control mr-sm-2">
+        
+            <!-- <label for="bandorigin">Band origin</label>
+            <input #bandorigin class="form-control mr-sm-2">
+            <small class="form-text text-muted">City, State, Country</small> -->
+            
+            <br />
+            <button class="btn btn-outline-primary" (click) = "submitForm(venueName.value);">Add New Show</button>
+          </div>
+        </div>
+    </div>
   </div>
 </div>
