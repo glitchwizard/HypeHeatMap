@@ -21,7 +21,6 @@ export class ShowListingComponent implements OnInit {
     
     this.ShowService.getShows().subscribe(dataLastEmittedFromObserver => { this.showListWithObjects = dataLastEmittedFromObserver;
     });
-
   }
 
 
