@@ -18,13 +18,8 @@ export class ShowListingComponent implements OnInit {
 
   ngOnInit() {
     this.showList = this.ShowService.getShows();
-    console.log('showlist: ');
-    console.log(this.showList);
-
-    console.log("Data last emitted from observer: ");
     
     this.ShowService.getShows().subscribe(dataLastEmittedFromObserver => { this.showListWithObjects = dataLastEmittedFromObserver;
-    console.log(this.showListWithObjects);
     });
 
   }
