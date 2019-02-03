@@ -54,8 +54,8 @@ export class RightMenuComponent implements OnInit {
     this.venueService.addVenue(newVenue);
   }
 
-  submitShowForm(showDate: Date) {
-    const newShow: Show = new Show(showDate);
+  submitShowForm(showDateInput: Date) {
+    const newShow: Show = new Show(showDateInput);
     this.showService.addShow(newShow);
   }
 }

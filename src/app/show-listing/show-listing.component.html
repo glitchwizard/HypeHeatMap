@@ -7,8 +7,14 @@
             <button class="btn btn-outline-primary btn-sm"> Edit </button>
         </div>
         <div class="card-body">
-          <h3>Show Date: {{currentShow.showDate}}</h3>
-          <h4>origin: {{currentShow.origin}}</h4>
+          Key: {{currentShow.$key}}
+          <div *ngIf="isBandListPopulated">
+            test 123
+            <!-- <div *ngFor="let currentBand of bandList | async">
+              <h3>Band: {{currentBand.name}}</h3>
+              <h4>origin: {{currentBand.origin}}</h4>
+            </div>   -->
+          </div>  
         </div>
       </div>
       <p></p>
